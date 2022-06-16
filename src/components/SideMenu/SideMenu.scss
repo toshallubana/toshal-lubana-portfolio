@@ -1,0 +1,85 @@
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #1d1d1d;
+    height: 100%;
+    grid-column: span 1;
+    a {
+        letter-spacing: 1px;
+        color: #8d8d8d;
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        height: 40%;
+        transition: all 0.4s ease;
+    }
+}
+.main-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    z-index: 3;
+    &__icon{
+        height: 40%;
+        letter-spacing: 1px;
+        color: #8d8d8d;
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        transition: all 0.4s ease;
+        &__img {
+            width: 50%;
+            height: 70%;
+            margin: 0 auto;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        &__navlink:hover {
+            color: #fd1056;
+            transition: all 0.4s ease;
+            letter-spacing: 2px;
+        }
+        &__navlink:hover::before {
+            content: "<";
+            color: #fd1056;
+            display: inline;
+            transition: all 0.4s ease;
+        } 
+        &__navlink:hover::after {
+            content: ">";
+            color: #fd1056;
+            display: inline;
+            transition: all 0.4s ease;
+        }  
+    }
+    &__profile {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        &__link {
+            width: 1.5rem;
+            height: 1.5rem;
+            max-width: 100%;
+        }
+    }
+    &__email {
+        padding-top: 2rem;
+        &__txt {
+            color: #fff;
+            opacity: 0.5;
+            font-size: 0.9rem;
+        }
+    }
+}

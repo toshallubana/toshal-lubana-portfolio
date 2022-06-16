@@ -1,0 +1,52 @@
+.main-page {
+    &__head {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        &__title{
+            &__value {
+                font-family: "Barlow", sans-serif;
+                font-size: 4.2rem;
+                color: #fff;
+                &__pink-text{
+                    font-size: 3.2rem;
+                    color: #fd1056;
+                }
+            }
+            &__para {
+                color: #8d8d8d;
+            }
+            &__download{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: transparent;
+                border-width: 1px;
+                border-color: #fd1056;
+                border-style: solid;
+                letter-spacing: 1px;
+                padding: 1rem;
+                letter-spacing: 1px;
+                width: 15rem;
+                max-width: 50%;
+                text-align: center;
+                font-family: "Inter", sans-serif;
+                opacity: 0.9;
+                background: linear-gradient(to right, #fff 50%, transparent 50%);
+                background-size: 200% 100%;
+                background-position: right bottom;
+                transition: all 0.4s ease;
+                
+                &__para {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                }
+            }
+            &__download:hover{
+                background-position: left bottom;
+                border-color: transparent;
+                transition: all 0.4s ease;
+            }
+        }
+    }
+}
